@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>VAlidate by Direct input</h2>
+
+   <form action="index.js" method="post" enctype="multipart/form-data">
+   <fieldset>
+    <legend>Validate by direct input</legend>
+    <label for="desc"> Enter the markup to Validate </label><br>
+    <textarea name="descripcion" id="desc" rows="15" cols="25">escribe aqui</textarea> <br>
+    <input type="radio" name="validateH" value="vali" id="vali" checked>
+    <label for="vali">Validate full Document</label><br>
+    <label for="Doc">Use DOCTYPE</label>
+    <select name="Doc" id="Doc">
+        <option value="">--(Detect Automatically)--</option>
+        <option value="men">mentira</option>
+        <option value="ver">verdad</option>
+        <option value="hol">hola</option>
+    </select>
+    <br>
+    <input type="radio" name="validateH" value="valih" id="valih" >
+    <label for="valih">Validate HTML fragment</label><br>
+    <label for="Doc">Use DOCTYPE</label><br>
+    <input type="radio" name="validate" value="HTML" id="HTML" >
+    <label for="HTML">HTML4 0.1</label>
+    <input type="radio" name="validate" value="XHTML" id="XHTML" >
+    <label for="XHTML">XHTML4 0.1</label><br>
+   </fieldset>
+   <fieldset>
+    <legend>Options</legend>
+    <input type="radio" name="GroupL" value="List" id="List"  checked>
+    <label for="List">List messages Sequentially</label >
+    <input type="radio" name="GroupL" value="Group" id="Group" >
+    <label for="Group">Group Error Mesages by Type</label><br>
+
+    <input type="checkbox" name="Show Source" value="SS" id="SS" >
+    <label for="SS">Show Source</label>
+
+    <input type="checkbox" name="Clean up Markup with HTML-Tidy" value="Clean html" id="Clean">
+    <label for="Clean">Clean up Markup with HTML-Tidy</label><br>
+   </fieldset>
+
+   <input type="button" value="check" >
+</form>
+</body>
+</html>
